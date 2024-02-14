@@ -1,4 +1,4 @@
-# whatsappstatussaver
+# whatsapp_status_saver
 
 A new Flutter project.
 
