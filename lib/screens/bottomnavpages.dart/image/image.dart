@@ -40,15 +40,16 @@ class _ImageHomePageState extends State<ImageHomePage> {
     return Consumer<GetStatusProvider>(
       builder: (context, file, _) {
         return Scaffold(
+          backgroundColor: KBlackcolor,
           appBar: AppBar(
-            backgroundColor: Colors.white,
+            backgroundColor: KBlackcolor,
             elevation: 0,
             title: Center(
               child: Text(
                 "Photos",
                 style: GoogleFonts.poppins(
                   fontSize: 25,
-                  color: KBlackcolor,
+                  color: Kwhitecolor,
                 ),
               ),
             ),
@@ -72,7 +73,7 @@ class _ImageHomePageState extends State<ImageHomePage> {
                           return GestureDetector(
                             onTap: () {
                               Navigator.of(context).push(MaterialPageRoute(
-                                builder: (context) => const ImageView(),
+                                builder: (context) =>  ImageView(imagePath:data.path,),
                               ));
                             },
                             child: Container(

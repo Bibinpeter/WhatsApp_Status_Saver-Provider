@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:whatsappstatussaver/constrains/colors.dart';
 
 class VideoView extends StatefulWidget {
-  const VideoView({super.key, Key? ky});
+  const VideoView({super.key, Key? ky, required String videoPath});
 
   @override
   State<VideoView> createState() => _VideoViewState();
